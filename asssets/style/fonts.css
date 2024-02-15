@@ -1,0 +1,87 @@
+/****  Roboto  *******************************************/
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto_400.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto_700.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto_900.woff2) format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto_italic_400.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto_italic_700.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto_italic_900.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+/****  Roboto - Serif  ***********************************/
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../fonts/roboto_serif_400.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../fonts/roboto_serif_700.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../fonts/roboto_serif_900.woff2) format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../fonts/roboto_serif_italic_400.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../fonts/roboto_serif_italic_700.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../fonts/roboto_serif_italic_900.woff2) format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}

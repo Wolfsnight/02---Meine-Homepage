@@ -1,0 +1,67 @@
+/*  Allgemein
+  ********************************************************/
+
+body {
+  box-sizing: border-box;
+
+
+
+  background-color: rgb(25, 25, 50);
+}
+
+/*  Allgemein - Schrift und Text
+  ********************************************************/
+
+body {
+  font-family: "Roboto", Courier, monospace;
+  font-size: 1.1rem;
+  color: whitesmoke;
+
+  word-spacing: 3px;
+  letter-spacing: 2px;
+
+
+}
+
+h1 {
+  font-family: "Roboto Serif";
+  font-size: 3rem;
+
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto Serif";
+  font-size: 1.8rem;
+
+  text-align: center;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/*  Header
+  ********************************************************/
+
+header {
+  text-align: center;
+}
+
+/*  Footer
+  ********************************************************/
+
+footer {
+  text-align: center;
+}
+
+/*  Class
+  ********************************************************/
+
+.notice {
+  background-color: red;
+  color: white;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
