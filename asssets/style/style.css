@@ -6,7 +6,7 @@ body {
 
 
 
-  background-color: rgb(25, 25, 50);
+  background-color: #1D0E46;
 }
 
 /*  Allgemein - Schrift und Text
@@ -15,7 +15,7 @@ body {
 body {
   font-family: "Roboto", Courier, monospace;
   font-size: 1.1rem;
-  color: whitesmoke;
+  color: #F2F2F2;
 
   word-spacing: 3px;
   letter-spacing: 2px;
