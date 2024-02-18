@@ -4,9 +4,10 @@
 body {
   box-sizing: border-box;
 
+  background-color: #18044e;
 
-
-  background-color: #1D0E46;
+  position: relative;
+  top: 90px;
 }
 
 /*  Allgemein - Schrift und Text
@@ -20,7 +21,8 @@ body {
   word-spacing: 3px;
   letter-spacing: 2px;
 
-
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -42,26 +44,110 @@ p {
 }
 
 /*  Header
-  ********************************************************/
+===========================================================
+*/
+
+/* Lösung - Lesezeichen Scroll Problem */
+html {
+  scroll-padding-top: 90px;
+  /* Höhe von Header */
+}
 
 header {
-  text-align: center;
+  /****  Display  ****/
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px 30px 30px;
+  grid-auto-rows: 1fr;
+
+  gap: 0px;
+
+  /****  Container  ****/
+  width: 100%;
+
+  background-color: #18044e;
+
+  border-bottom: 2px solid #65B32E;
+
+  padding: 0rem 1rem;
+
+  box-sizing: border-box;
+
+  /****  Position  ****/
+  position: fixed;
+
+  top: 0;
+  left: 0;
 }
 
-/*  Footer
-  ********************************************************/
+#logo {
+  /****  Grid  ****/
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 3;
+  z-index: 0;
 
-footer {
-  text-align: center;
+  justify-self: flex-start;
+  align-self: center;
 }
 
-/*  Class
-  ********************************************************/
+#logo img {
+  width: 80px;
+  height: 80px;
+}
 
-.notice {
-  background-color: red;
-  color: white;
+header nav {
+  /****  Grid  ****/
 
+  grid-column: 5 / span 8;
+  grid-row: 1 / span 3;
+  z-index: 0;
+
+  justify-self: flex-end;
+  align-self: center;
+}
+
+header span {
+  background-color: #EC6608;
+
+  padding: 10px 20px;
+
+  border-radius: 20px;
+  border: 2px solid #F2F2F2;
+}
+
+header nav li {
+  /****  Inline  ****/
+  display: inline;
+  list-style: none;
+}
+
+header nav a:link {
+  /****  Box  ****/
+  padding: 0px 0.5rem;
+
+  /****  Font/Text  ****/
   font-size: 1.5rem;
+  font-weight: 400;
+}
+
+header nav a:hover {
+  /****  Font/Text  ****/
   font-weight: 700;
+}
+
+header nav a:active {
+  /****  Font/Text  ****/
+  font-weight: 400;
+}
+
+/*  Link
+===========================================================
+*/
+
+a {
+  color: #F2F2F2;
+  text-decoration: none;
+
+  cursor: pointer;
 }

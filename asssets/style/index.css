@@ -1,0 +1,55 @@
+/*  Hero
+===========================================================
+*/
+
+#hero h1 {
+  margin: 0;
+}
+
+#hero p {
+  font-style: italic;
+  text-align: center;
+
+  margin: 10px 0 50px 0;
+}
+
+#face {
+  width: 300px;
+  height: 300px;
+
+  border: 5px solid #EC6608;
+  border-radius: 300px;
+
+  overflow: hidden;
+
+  margin: 50px auto;
+}
+
+#face img {
+  width: 100%;
+  height: auto;
+}
+
+/* Über mich
+===========================================================
+*/
+
+#about-me {
+  background-color: #65B32E;
+
+  padding: 20px 100px;
+}
+
+#about-me h2 {
+  color: #18044e;
+
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+#about-me p {
+  color: #18044e;
+
+  font-size: 1.2rem;
+  text-align: center;
+}
