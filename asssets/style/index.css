@@ -48,7 +48,7 @@
 }
 
 #about-me p {
-  color: #18044e;
+  color: #09021d;
 
   font-size: 1.2rem;
   text-align: center;
@@ -106,7 +106,7 @@ footer p {
   text-align: center;
 }
 
-footer span {
+#icons-by {
   font-size: 0.8rem;
   font-style: italic;
 }
@@ -114,7 +114,7 @@ footer span {
 /****  Impresssum  ****************************************/
 
 #impressum {
-  display: unset;
+  display: none;
 
   width: 100%;
   height: 100%;
