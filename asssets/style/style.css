@@ -9,7 +9,7 @@ body {
   top: 96px;
 
   font-family: "Roboto", Courier, monospace;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #F2F2F2;
 
   word-spacing: 3px;
@@ -21,14 +21,14 @@ body {
 
 h1 {
   font-family: "Roboto Serif";
-  font-size: 3rem;
+  font-size: 2rem;
 
   text-align: center;
 }
 
 h2 {
   font-family: "Roboto Serif";
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 
   text-align: center;
 }
@@ -37,7 +37,7 @@ p {
   line-height: 1.4;
 }
 
-/****  Header  *******************************************/
+/*  Header  **********************************************/
 
 /****  Lösung - Lesezeichen Scroll Problem  ****/
 html {
@@ -49,8 +49,7 @@ header {
   display: grid;
 
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 32px 32px 32px;
-  grid-auto-rows: 32px;
+  grid-template-rows: 24px 24px 24px;
 
   gap: 0px;
 
@@ -58,9 +57,9 @@ header {
 
   background-color: #09021d;
 
-  border-bottom: 2px solid #65B32E;
+  border-bottom: 2px solid #EC6608;
 
-  padding: 0rem 1rem;
+  padding: 0em 1em;
 
   box-sizing: border-box;
 
@@ -70,23 +69,51 @@ header {
   left: 0;
 }
 
-#menu img {
-  display: inline;
-}
+/*  Menu  ************************************************/
 
-#logo {
-  /****  Grid  ****/
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 3;
-  z-index: 0;
+#menu {
+  grid-column: 2 / span 3;
+  grid-row: 1/ span 3;
 
   justify-self: flex-end;
   align-self: center;
 }
 
+#menu-open {
+  float: left;
+
+  font-size: 1.5rem;
+
+  padding: 3px 10px;
+  margin: 0;
+}
+
+#menu-close {
+  display: none;
+
+  float: left;
+}
+
+#menu-icon {
+  width: 2.5em;
+  height: auto;
+}
+
+/*  Logo  ************************************************/
+
+#logo {
+  /****  Grid  ****/
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+  z-index: 0;
+
+  justify-self: flex-start;
+  align-self: center;
+}
+
 #logo img {
-  width: 80px;
-  height: 80px;
+  width: 2.5em;
+  height: auto;
 }
 
 header nav {
