@@ -74,26 +74,46 @@
 
       <!--  Menu  -------------------->
       <div id="menu">
-        <p id="menu-open">Menü</p>
-        <p id="menu-close">Schließen</p>
+        <p
+          id="menu-open"
+          onclick="navDisplay()"
+        >Menü</p>
+        <p
+          id="menu-close"
+          onclick="navDisplay()"
+        >Schließen</p>
         <img
           src="asssets/icons/menu-96.png"
           alt=""
           id="menu-icon"
+          onclick="navDisplay()"
         >
       </div>
 
       <!--  Navigation  -------------->
-      <nav>
+      <nav id="header-nav">
         <ul>
           <li>
-            <a href="#about-me">Über mich</a>
+            <a
+              href="#about-me"
+              class="nav-link"
+              onclick="navDisplay()"
+            >Über mich</a>
           </li>
           <li>
-            <a href="#my-skills">Meine Kenntnisse</a>
+            <a
+              href="#my-skills"
+              class="nav-link"
+              onclick="navDisplay()"
+            >Meine Kenntnisse</a>
           </li>
           <li>
-            <button><a href="mailto:spiegler@hotmail.de">Kontakt</a></button>
+            <button><a
+                href="mailto:spiegler@hotmail.de"
+                target="_blank"
+                class="nav-link"
+                onclick="navDisplay()"
+              >Kontakt</a></button>
           </li>
         </ul>
       </nav>

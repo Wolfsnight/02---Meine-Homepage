@@ -77,15 +77,19 @@ header {
 
   justify-self: flex-end;
   align-self: center;
+
+  cursor: pointer;
 }
 
-#menu-open {
+#menu p {
   float: left;
 
   font-size: 1.5rem;
 
   padding: 3px 10px;
   margin: 0;
+
+
 }
 
 #menu-close {
@@ -116,40 +120,47 @@ header {
   height: auto;
 }
 
+/*  Navigation  ******************************************/
+
 header nav {
-
   display: none;
-  /****  Grid  ***
 
-  grid-column: 3 / span 10;
-  grid-row: 1 / span 3;
-  z-index: 0;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+}
 
-  justify-self: flex-end;
-  align-self: center;*/
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: block;
+
+  text-align: center;
+
+  margin: 1.5em;
 }
 
 header button {
   background-color: #EC6608;
 
-  padding: 10px 20px;
+  padding: 10px 80px;
+  margin: 3em 0em 1.5em 0em;
 
   border-radius: 30px;
   border: 2px solid #F2F2F2;
 }
 
-header nav li {
-  /****  Inline  ****/
-  display: inline;
-  list-style: none;
+header button li {
+  text-align: center;
 }
 
 header nav a:link {
-  /****  Box  ****/
-  padding: 0px 0.5rem;
 
   /****  Font/Text  ****/
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -161,6 +172,7 @@ header nav a:hover {
 header nav a:active {
   /****  Font/Text  ****/
   font-weight: 400;
+
 }
 
 /*  Link
