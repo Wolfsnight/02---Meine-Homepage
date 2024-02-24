@@ -1,26 +1,39 @@
-/*  Hero  ************************************************/
+/*  Allgemein  ***************************************************************/
+
+section {
+  padding: 1em 10%;
+
+  margin: 0 auto;
+}
+
+/*  Hero  ********************************************************************/
+
 
 #hero h1 {
   margin: 0;
 }
 
 #hero p {
+  font-size: 1rem;
   font-style: italic;
   text-align: center;
 
-  margin: 10px 0 50px 0;
+  margin: 1em 0 1em 0;
 }
 
 #face {
-  width: 300px;
-  height: 300px;
+  display: block;
+
+  width: 100%;
+  max-width: 20em;
+  height: 100%;
 
   border: 5px solid #EC6608;
   border-radius: 300px;
 
   overflow: hidden;
 
-  margin: 50px auto;
+  margin: 0px auto 3em auto;
 }
 
 #face img {
@@ -28,54 +41,68 @@
   height: auto;
 }
 
-/* Über mich
-===========================================================
-*/
+/*  Über mich  ****************************************************************/
 
 #about-me {
   background-color: #65B32E;
-
-  padding: 20px 100px;
 }
 
 #about-me h2 {
   color: #18044e;
 
-  font-size: 2.5rem;
-  font-style: italic;
+  font-size: 2.2rem;
 }
 
 #about-me p {
   color: #09021d;
 
-  font-size: 1.2rem;
+  text-align: center;
+
+  margin: 2em 0;
+}
+
+/*  Meine Kentnisse  ********************************************************/
+
+#my-skills hgroup {
+  margin-bottom: 3em;
+}
+
+#my-skills hgroup h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+#my-skills hgroup p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+
   text-align: center;
 }
 
-/*  Meine Kentnisse
-  ********************************************************/
+#my-skills h3 {
+  font-size: 1.6rem;
 
-#my-skills {
-  padding: 20px 100px;
+  text-align: center;
+
+  margin: 3em 0 2em 0;
 }
 
-#my-skills h2 {
-  font-size: 2.5rem;
-  font-style: italic;
-}
+#my-skills img {
+  display: block;
 
-#my-skills div {
-  display: flex;
-  justify-content: space-around;
+  width: 60%;
+  max-width: 8em;
 
-  padding: 50px 0px;
+  margin: 0 auto;
 }
 
 #my-skills article p {
   text-align: center;
 
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 0 2em 0;
 }
 
 #my-skills p {
@@ -83,62 +110,94 @@
   font-weight: 700;
 }
 
-#my-skills li {
-  list-style-type: disc;
+#my-skills ul {
+  list-style-type: none;
 
-  font-size: 1.2rem;
+  line-height: 1.2;
 
-  padding: 2px 20px;
+  margin: 0;
+  padding: 0;
 }
 
-/*  Footer
-  ********************************************************/
+#my-skills li {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+
+  margin: 0 0 1em 0;
+}
+
+#my-skills li span {
+  font-style: italic;
+}
+
+/*  Footer  ******************************************************************/
 
 footer {
   background-color: #EC6608;
 
-  padding: 20px 100px;
+  padding: 1em 2.5em 1em 2.5em;
 }
 
 footer p {
   text-align: center;
 }
 
+#impressum-open {
+  cursor: pointer;
+}
+
 #icons-by {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-style: italic;
 }
 
-/****  Impresssum  ****************************************/
+/****  Impresssum  ***********************************************************/
 
 #impressum {
   display: none;
-
   width: 100%;
   height: 100%;
+
   position: fixed;
   top: 0px;
   left: 0px;
 
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #09021d;
+
+  overflow-y: scroll;
+
+  padding: 0;
+  margin: 0;
 }
 
 #impressum h2 {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
 
   color: #65B32E;
+
+  margin: 2em 0 0 0;
 }
 
 #impressum div {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  padding: 0 10%;
+  margin: 4em 0;
 
-  padding: 50px;
+}
+
+#impressum address,
+#impressum h3 {
+  text-align: center;
+}
+
+#impressum address {
+  padding: 0.5em 0;
 }
 
 #impressum button {
-  background-color: rgba(0, 0, 0, 0.95);
+  display: block;
+
+  background-color: #09021d;
 
   color: #65B32E;
 
@@ -152,6 +211,7 @@ footer p {
   border-radius: 30px;
 
   padding: 10px 60px;
+  margin: 0 auto;
 }
 
 #impressum button:hover {
@@ -161,3 +221,76 @@ footer p {
 #impressum button:active {
   font-size: 1.4rem;
 }
+
+/* Tablet  *******************************************************************/
+
+@media only screen and (min-width: 480px) {
+
+  /*  Meine Kentnisse  ***********************************/
+
+  #my-skills div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #my-skills div article {
+    flex: 1 1 10em;
+  }
+
+}
+
+/* Tablet - Landscape  *******************************************************/
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 0.5em;
+  }
+
+  #impressum div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  #adress h3 {
+    flex: 1 1 100%;
+  }
+
+  #contact h3 {
+    flex: 1 1 100%;
+  }
+}
+
+/* Laptop  *******************************************************************/
+
+@media only screen and (min-width: 1024px) {
+
+
+  /*  Über mich  *****************************************/
+
+  #about-me {
+    padding: 5em 10%;
+  }
+
+  #about-me p {
+    display: block;
+    max-width: 30em;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*  Meine Kenntnisse  **********************************/
+
+  #my-skills {
+    max-width: 50em;
+
+    padding: 5em 10%;
+  }
+}
+
+/* Desktop  ******************************************************************/
+
+@media only screen and (min-width: 1600px) {}

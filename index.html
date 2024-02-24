@@ -2,54 +2,46 @@
 
 <html>
 
-  <!--  Head 
-  ---------------------------------------------------------------------------->
+  <!--  Head  ---------------------------------------------------------------->
 
   <head>
-    <!--  Charset: 
-      -------------------------------->
+    <!--  Charset  ------------------->
 
     <meta charset="UTF8" />
 
-    <!--  Viewport: 
-      -------------------------------->
+    <!--  Viewport  ------------------>
 
     <meta
       name="viewport"
       content="width=device-width"
     />
 
-    <!--  Titel der Webseite:  
-      -------------------------------->
+    <!--  Titel der Webseite  -------->
 
     <title>Markus Spiegler</title>
 
-    <!-- Style - Font:  
-      -------------------------------->
+    <!-- Style - Font  --------------->
 
     <link
       rel="stylesheet"
       href="asssets/style/fonts.css"
     />
 
-    <!-- Style - Allgemein:  
-      -------------------------------->
+    <!-- Style - Allgemein  ---------->
 
     <link
       rel="stylesheet"
       href="asssets/style/style.css"
     />
 
-    <!-- Style: Index
-      -------------------------------->
+    <!-- Style: Index  --------------->
 
     <link
       rel="stylesheet"
       href="asssets/style/index.css"
     >
 
-    <!-- Script:
-      -------------------------------->
+    <!-- Script  --------------------->
 
     <script
       src="asssets/scripts/script.js"
@@ -57,11 +49,10 @@
     ></script>
   </head>
 
-  <!--  Body: 
-  ---------------------------------------------------------------------------->
+  <!--  Body  ---------------------------------------------------------------->
 
   <body>
-    <!--  Header:  --------------------------------------->
+    <!--  Header  ---------------------------------------->
 
     <header>
       <!--  Logo  -------------------->
@@ -78,10 +69,12 @@
           id="menu-open"
           onclick="navDisplay()"
         >Menü</p>
+
         <p
           id="menu-close"
           onclick="navDisplay()"
         >Schließen</p>
+
         <img
           src="asssets/icons/menu-96.png"
           alt=""
@@ -100,6 +93,7 @@
               onclick="navDisplay()"
             >Über mich</a>
           </li>
+
           <li>
             <a
               href="#my-skills"
@@ -107,6 +101,7 @@
               onclick="navDisplay()"
             >Meine Kenntnisse</a>
           </li>
+
           <li>
             <button><a
                 href="mailto:spiegler@hotmail.de"
@@ -158,8 +153,12 @@
       </section>
 
       <section id="my-skills">
-        <h2>Meine Kenntnisse</h2>
+        <hgroup>
+          <h2>Meine Kenntnisse</h2>
+          <p>Ich besitze grundlegenden Kenntnisse in folgenden Bereiche. </p>
+        </hgroup>
 
+        <h3>Webentwicklung</h3>
         <div>
           <article id="html">
             <img
@@ -186,15 +185,13 @@
           </article>
         </div>
 
+        <h3>Sonstige Kenntnisse</h3>
         <div>
-          <p>
-            Ausserdem habe ich Erfahrungen in
-          </p>
           <ul>
             <li>Fotografie</li>
-            <li>Bildbearbeitung (Adobe-Photoshop)</li>
+            <li>Bildbearbeitung <span>(Adobe-Photoshop)</span></li>
             <li>Videografie</li>
-            <li>Videobearbeitung (DaVinci Resolved)</li>
+            <li>Videobearbeitung <span>(DaVinci Resolved)</span></li>
             <li>Mediengestaltung</li>
             <li>Internetsicherheit</li>
           </ul>
@@ -207,14 +204,22 @@
 
     <footer>
       <p>
-        Copyright by Markus Spiegler | Spiegler@hotmail.de | <span
-          id="impressum-open"
-        >Impressum</span>
+        Copyright by Markus Spiegler
+      </p>
+
+      <p id="impressum-open">
+        Impressum
       </p>
 
       <p>
-        <span id="icons-by">Icons by <a
-            href="https://icons8.de/">Icons8</a></span>
+
+        <a
+          href="https://icons8.de/"
+          target="_blank"
+        >
+          <span id="icons-by">Icons by Icons8</span>
+        </a>
+
       </p>
     </footer>
 
@@ -236,14 +241,20 @@
       <div id="contact">
         <h3>Kontakt:</h3>
         <address>
-          E-Mail:
+
           <a
             href="mailto:Spiegler@hotmail.de"
             target="_blank"
-          >Spiegler@hotmail.de</a> <br>
+          >
+            <span class="strong">E-Mail:</span> <br>
+            Spiegler@hotmail.de</a> <br>
+        </address>
 
-          Telefon:
-          <a href="tel:+4917680666001">+49 176 80 666 001</a>
+        <address>
+          <a href="tel:+4917680666001">
+            <span class="strong">Telefon:</span> <br>
+            +49 176 80 666 001
+          </a>
         </address>
       </div>
       <div>

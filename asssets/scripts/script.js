@@ -1,10 +1,11 @@
-//  Menü  /////////////////////////////////////////////////
+//  Menü 
 
 const navDisplay = () =>
 {
     const nav = document.getElementById("header-nav");
     const menuOpen = document.getElementById("menu-open");
     const menuClose = document.getElementById("menu-close")
+    const menuIcon = document.getElementById("menu-icon")
 
     if (nav.style.display === "none")
     {
